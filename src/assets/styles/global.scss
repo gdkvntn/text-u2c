@@ -1,0 +1,45 @@
+@use './variables.scss' as *;
+@use './resset.scss';
+
+@font-face {
+	font-display: swap;
+	font-family: 'LabGrotesque';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/LabGrotesque-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'LabGrotesque';
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/LabGrotesque-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'LabGrotesque';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/LabGrotesque-Light.woff') format('woff');
+}
+
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'LabGrotesque';
+}
+
+button {
+	cursor: pointer;
+	font-family: inherit;
+	transition: 0.3s linear;
+}

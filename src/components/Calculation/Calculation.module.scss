@@ -1,0 +1,104 @@
+@use '@/assets/styles/variables.scss' as *;
+
+.container {
+	padding: 32px;
+}
+
+.title {
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 40px;
+}
+
+.description {
+	color: $gray-text;
+	margin-top: 6px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.body {
+	margin-top: 10px;
+}
+.calc {
+	margin-top: 8px;
+}
+.quality-month {
+	margin-top: 16px;
+	display: flex;
+	align-items: center;
+	gap: 38px;
+	span {
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 24px;
+	}
+	&-picker {
+		display: flex;
+		gap: 8px;
+	}
+}
+
+.add-button {
+	width: 100%;
+	margin-top: 48px;
+}
+
+.total {
+	margin-top: 22px;
+	&-picker {
+		margin-top: 12px;
+		display: flex;
+		gap: 6px;
+	}
+	&-text {
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 24px;
+	}
+	&-price {
+		margin-top: 38px;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 24px;
+	}
+}
+
+@media screen and (max-width: 384px) {
+	.container {
+		padding: 32px 16px 16px 16px;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.title {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.description {
+		margin-top: 16px;
+		font-size: 12px;
+		line-height: 16px;
+	}
+	.body {
+		margin-top: 8px;
+	}
+	.quality-month {
+		margin-top: 24px;
+		flex-direction: column;
+		gap: 16px;
+		align-items: start;
+	}
+	.total {
+		margin-top: 16px;
+		&-price {
+			margin-top: 24px;
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
+	.add-button {
+		margin-top: auto;
+	}
+}

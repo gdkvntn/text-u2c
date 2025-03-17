@@ -1,0 +1,50 @@
+@use '@/assets/styles/variables.scss' as *;
+
+.overlay {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.modal {
+	position: relative;
+	width: 100%;
+	max-width: 552px;
+	border-radius: 30px;
+	background: $white;
+}
+
+.close-icon {
+	cursor: pointer;
+	position: absolute;
+	right: 16px;
+	top: 16px;
+}
+
+@media screen and (max-width: 768px) {
+	.modal {
+		max-width: 453px;
+	}
+}
+
+@media screen and (max-width: 384px) {
+	.close-icon {
+		width: 24px;
+		height: 24px;
+	}
+	.overlay {
+		padding: 0;
+	}
+	.modal {
+		height: 100vh;
+		border-radius: 0;
+	}
+}
