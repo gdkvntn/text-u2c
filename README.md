@@ -2,7 +2,7 @@
 
 Добро пожаловать !
 
-Demo: https://gdkvntn.github.io/portfolio-overview/
+Demo: https://gdkvntn.github.io/text-u2c/
 
 ### 💻 Запуск
 
